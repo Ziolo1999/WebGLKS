@@ -127,6 +127,7 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">NASZA WIZJA SZKOLENIOWA</h2>
                     <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                    <p class="section-heading">Kliknij, aby wyświetlić więcej</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -394,7 +395,7 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form id="contactForm" action="php/mail.php" method="post">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -421,7 +422,7 @@
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Pole wymagane.</div>
                             </div>
                         </div>
-                        <div class="g-recaptcha" style="padding-top: 20px" data-sitekey="6LddQW8pAAAAAMne9T1F0HqRTMHZpwNzqBqI0-Cd"></div>
+                        <div class="g-recaptcha" style="padding-top: 20px" data-sitekey="6LcMa3sqAAAAAMuQJbPUh8AryDxzhPj0VlYdGk-1"></div>
                     </div>
                     <!-- Submit success message-->
                     <!---->
@@ -430,9 +431,6 @@
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
                             <div class="fw-bolder">Wiadomość została wysłana!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                         </div>
                     </div>
                     <!-- Submit error message-->
@@ -441,9 +439,13 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Wystpił błąd!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Wyślij wiadomość</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Wyślij wiadomość</button></div>
                 </form>
             </div>
+        </section>
+        <section class="page-section" id="map" style="padding: 0;">
+            <div class="row align-items-stretch mb-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10173.000703908505!2d20.809129545005444!3d52.09638117196586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471937026e461c61%3A0xc2acffedcc9ad471!2sPrimary%20School%20in%20Nadarzyn!5e1!3m2!1sen!2spl!4v1731340709219!5m2!1sen!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
         </section>
         <!-- Footer-->
         <footer class="footer py-4">

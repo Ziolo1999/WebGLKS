@@ -2,16 +2,16 @@
 
 <?php
 // SMTP server configuration
-$smtpServer = 'smtp.dpoczta.pl'; 
+$smtpServer = 'smtp.gmail.com'; 
 $smtpPort = 465; 
-$smtpUsername = 'www@tne.com.pl'; 
-$smtpPassword = 'Tadzio12#'; 
+$smtpUsername = 'www.glksnadarzyn@gmail.pl'; 
+$smtpPassword = 'GlksHaslo12#'; 
 
 // Sender's email address
-$fromEmail = 'WebMail <www@tne.com.pl>';
+$fromEmail = 'WebMail <www.glksnadarzyn@gmail.com>';
 
 // Recipient's email address
-$toEmail = 'info@tne.technology';
+$toEmail = 'karol.ziolo10@gmail.com';
 
 // Email subject and message
 $name = $_POST['name'];
@@ -24,7 +24,7 @@ $headers = "From: $fromEmail\r\n";
 $headers .= "Content-type: text/html; charset=UTF-8\r\n";
 
 // Verify reCAPTCHA response
-$recaptcha_secret = '6LddQW8pAAAAADZ2imtefKEhch_WI5vzUAmBalE-';
+$recaptcha_secret = '6LcMa3sqAAAAAKvuOS5w_UbIWeX-PWJyFHy35GDV';
 $recaptcha_response = $_POST['g-recaptcha-response'];
 
 $url = 'https://www.google.com/recaptcha/api/siteverify';

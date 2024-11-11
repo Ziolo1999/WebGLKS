@@ -21,7 +21,6 @@ function populateScheduleTable() {
             // Clear any existing rows in the table body
             mlodsza_body.innerHTML = "";
 
-            // Assuming "table1" contains the schedule data in the JSON response
             data.data_grupa1.forEach(entry => {
                 // Create a new row
                 const row = document.createElement("tr");
@@ -43,12 +42,11 @@ function populateScheduleTable() {
             });
 
 
-            // TABELA MLODSZYCH
+            // TABELA SREDNICH
             const srednia_body = document.getElementById("srednia-body");
             // Clear any existing rows in the table body
             srednia_body.innerHTML = "";
 
-            // Assuming "table1" contains the schedule data in the JSON response
             data.data_grupa2.forEach(entry => {
                 // Create a new row
                 const row = document.createElement("tr");
@@ -69,7 +67,7 @@ function populateScheduleTable() {
                 srednia_body.appendChild(row);
             });
 
-            // TABELA MLODSZYCH
+            // TABELA STARSZYCH
             const starsza_body = document.getElementById("starsza-body");
             // Clear any existing rows in the table body
             starsza_body.innerHTML = "";
